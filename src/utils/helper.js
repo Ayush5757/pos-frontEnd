@@ -1,1 +1,1 @@
-export const serverUrl = "https://pos-api.onrender/api"
+export const serverUrl = "https://pos-api-h3xk.onrender.com/api"
