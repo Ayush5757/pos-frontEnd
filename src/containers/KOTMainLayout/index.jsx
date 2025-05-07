@@ -18,6 +18,7 @@ import { shoeNotification } from "../../components/Notify";
 import { useQueryClient } from '@tanstack/react-query';
 import { getKotData } from "../../services/api/kot";
 import Short from "../../assets/Short.mp3";
+import { websocketserverUrl } from "../../utils/helper";
 
 const KOTMainLayout = () => {
   const token = getKOTAccessToke();
@@ -32,7 +33,7 @@ const KOTMainLayout = () => {
   };
 
   const setupSocketConnection = () => {
-    const socket = io("http://localhost:8000", {
+    const socket = io(websocketserverUrl, {
       reconnection: true,
       reconnectionDelay: 1000,
       // transports: ['websocket'],

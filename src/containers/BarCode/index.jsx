@@ -49,7 +49,7 @@ const BarCode = () => {
                   values.shopID = localStorage.getItem("shop_user_id");
                   await axios
                     .post(
-                      "http://localhost:8000/api/barcode/barcode-add",
+                      `${process.env.react_app_web_socket_backend}/api/barcode/barcode-add`,
                       values,
                       {
                         headers: {

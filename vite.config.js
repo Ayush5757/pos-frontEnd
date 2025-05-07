@@ -7,12 +7,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000', 
+        target: process.env.react_app_web_socket_backend, 
         changeOrigin: true,
         secure: false,
       },
       '/socket.io': {
-        target: 'http://localhost:8000',
+        target: process.env.react_app_web_socket_backend,
         ws: true,
         changeOrigin: true,
       }

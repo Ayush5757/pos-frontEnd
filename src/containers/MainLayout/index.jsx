@@ -40,7 +40,7 @@ const MainLayout = () => {
     try {
       await axios
         .get(
-          `http://localhost:8000/api/reminder/getReminder?selectDate=${moment(
+          `${process.env.react_app_web_socket_backend}/api/reminder/getReminder?selectDate=${moment(
             new Date()
           ).format("YYYY-D-MMM")}`,
           {
@@ -64,7 +64,7 @@ const MainLayout = () => {
     } catch (error) {}
   };
   const setupSocketConnection = () => {
-    const socket = io("http://localhost:8000", {
+    const socket = io(process.env.react_app_web_socket_backend, {
       reconnection: true,
       reconnectionDelay: 1000,
       // transports: ['websocket'],

@@ -63,7 +63,7 @@ const ShopBanerImagesTaking = () => {
                     setimgLoading(() => true);
                     await axios
                       .post(
-                        "http://localhost:8000/api/otherimage/banner/image",
+                        `${process.env.react_app_web_socket_backend}/api/otherimage/banner/image`,
                         values,
                         {
                           headers: {
@@ -178,7 +178,7 @@ const ShopBanerImagesTaking = () => {
                     setimgLoading(true);
                     await axios
                       .post(
-                        "http://localhost:8000/api/otherimage/menuInstance/image",
+                        `${process.env.react_app_web_socket_backend}/api/otherimage/menuInstance/image`,
                         values,
                         {
                           headers: {

@@ -51,7 +51,7 @@ const TabUploadViewImage = () => {
                     <Grid.Col span={6}>
                       <img
                         className={classes.imagesGalleryImage}
-                        src={`http://localhost:8000/images/${res.imagePath}`}
+                        src={`${process.env.react_app_web_socket_backend}/images/${res.imagePath}`}
                         alt="shopImage"
                       />
                     </Grid.Col>
@@ -66,7 +66,7 @@ const TabUploadViewImage = () => {
             onSubmit={(values, { resetForm }) => {
               values.shopId = localStorage.getItem('shop_user_id')
               axios
-                .post("http://localhost:8000/api/upload-images", values, {
+                .post(`${process.env.react_app_web_socket_backend}/api/upload-images`, values, {
                   headers: {
                     "Content-Type": "multipart/form-data",
                   },

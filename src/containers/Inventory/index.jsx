@@ -898,7 +898,7 @@ const Inventory = () => {
             <Box className={classes.printWithTextQrBox}>
               <QRCode
                 id="Table"
-                value={`http://localhost:3000/shop-menu-card/${localStorage.getItem(
+                value={`${process.env.REACT_APP_WEB_SOCKET_BACKEND}/shop-menu-card/${localStorage.getItem(
                   "shop_user_id"
                 )}/22/${location?.state?.tableID}/${
                   location?.state?.table_type_id

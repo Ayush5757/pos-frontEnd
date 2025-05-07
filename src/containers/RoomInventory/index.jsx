@@ -942,7 +942,7 @@ const RoomInventory = () => {
             <Box className={classes.printWithTextQrBox}>
               <QRCode
                 id="Room"
-                value={`http://localhost:3000/shop-menu-card/${localStorage.getItem(
+                value={`${process.env.REACT_APP_WEB_SOCKET_BACKEND}/shop-menu-card/${localStorage.getItem(
                   "shop_user_id"
                 )}/22/${location?.state?.roomID}/${
                   location?.state?.room_type_id
