@@ -40,7 +40,7 @@ const MainLayout = () => {
     try {
       await axios
         .get(
-          `${process.env.react_app_web_socket_backend}/api/reminder/getReminder?selectDate=${moment(
+          `${import.meta.env.vite_web_socket_backend}/api/reminder/getReminder?selectDate=${moment(
             new Date()
           ).format("YYYY-D-MMM")}`,
           {
@@ -64,7 +64,7 @@ const MainLayout = () => {
     } catch (error) {}
   };
   const setupSocketConnection = () => {
-    const socket = io(process.env.react_app_web_socket_backend, {
+    const socket = io(import.meta.env.vite_web_socket_backend, {
       reconnection: true,
       reconnectionDelay: 1000,
       // transports: ['websocket'],

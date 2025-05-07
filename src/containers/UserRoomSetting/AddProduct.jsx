@@ -40,7 +40,7 @@ const AddProduct = ({
           }
           setisUploadLoading(()=>true)
           await axios
-            .post(`${process.env.react_app_web_socket_backend}/api/food/room/add`, values, {
+            .post(`${import.meta.env.vite_web_socket_backend}/api/food/room/add`, values, {
               headers: {
                 "Content-Type": "multipart/form-data",
                 Authorization: "Bearer " + accessToken,
