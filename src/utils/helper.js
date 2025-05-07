@@ -1,2 +1,2 @@
-export const serverUrl = "https://pos-api-h3xk.onrender.com/api"
-export const websocketserverUrl = "https://pos-api-h3xk.onrender.com"
+export const serverUrl = `${import.meta.env.VITE_WEB_SOCKET_BACKEND}/api`
+export const websocketserverUrl = import.meta.env.VITE_WEB_SOCKET_BACKEND
