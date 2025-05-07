@@ -63,7 +63,7 @@ const ShopBanerImagesTaking = () => {
                     setimgLoading(() => true);
                     await axios
                       .post(
-                        `${import.meta.env.vite_web_socket_backend}/api/otherimage/banner/image`,
+                        `${import.meta.env.VITE_WEB_SOCKET_BACKEND}/api/otherimage/banner/image`,
                         values,
                         {
                           headers: {
@@ -178,7 +178,7 @@ const ShopBanerImagesTaking = () => {
                     setimgLoading(true);
                     await axios
                       .post(
-                        `${import.meta.env.vite_web_socket_backend}/api/otherimage/menuInstance/image`,
+                        `${import.meta.env.VITE_WEB_SOCKET_BACKEND}/api/otherimage/menuInstance/image`,
                         values,
                         {
                           headers: {

@@ -36,11 +36,14 @@ const MainLayout = () => {
       console.error("Error playing audio:", error);
     });
   };
+
+  console.log('import.meta.env.VITE_WEB_SOCKET_BACKEND, ',import.meta.env.VITE_WEB_SOCKET_BACKEND,);
+  
   const CheckReminder = async () => {
     try {
       await axios
         .get(
-          `${import.meta.env.vite_web_socket_backend}/api/reminder/getReminder?selectDate=${moment(
+          `${import.meta.env.VITE_WEB_SOCKET_BACKEND}/api/reminder/getReminder?selectDate=${moment(
             new Date()
           ).format("YYYY-D-MMM")}`,
           {
@@ -64,7 +67,7 @@ const MainLayout = () => {
     } catch (error) {}
   };
   const setupSocketConnection = () => {
-    const socket = io(import.meta.env.vite_web_socket_backend, {
+    const socket = io(import.meta.env.VITE_WEB_SOCKET_BACKEND, {
       reconnection: true,
       reconnectionDelay: 1000,
       // transports: ['websocket'],

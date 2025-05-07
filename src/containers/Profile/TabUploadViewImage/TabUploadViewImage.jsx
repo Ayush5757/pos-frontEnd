@@ -51,7 +51,7 @@ const TabUploadViewImage = () => {
                     <Grid.Col span={6}>
                       <img
                         className={classes.imagesGalleryImage}
-                        src={`${import.meta.env.vite_web_socket_backend}/images/${res.imagePath}`}
+                        src={`${import.meta.env.VITE_WEB_SOCKET_BACKEND}/images/${res.imagePath}`}
                         alt="shopImage"
                       />
                     </Grid.Col>
@@ -66,7 +66,7 @@ const TabUploadViewImage = () => {
             onSubmit={(values, { resetForm }) => {
               values.shopId = localStorage.getItem('shop_user_id')
               axios
-                .post(`${import.meta.env.vite_web_socket_backend}/api/upload-images`, values, {
+                .post(`${import.meta.env.VITE_WEB_SOCKET_BACKEND}/api/upload-images`, values, {
                   headers: {
                     "Content-Type": "multipart/form-data",
                   },

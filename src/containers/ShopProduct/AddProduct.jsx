@@ -80,7 +80,7 @@ const AddProduct = ({ selectedItem, setAddBtn, refetchItems }) => {
         } else {
           setisLoading(()=>true)
           await axios
-            .post(`${import.meta.env.vite_web_socket_backend}/api/food/add`, values, {
+            .post(`${import.meta.env.VITE_WEB_SOCKET_BACKEND}/api/food/add`, values, {
               headers: {
                 "Content-Type": "multipart/form-data",
                 Authorization: "Bearer " + accessToken,
