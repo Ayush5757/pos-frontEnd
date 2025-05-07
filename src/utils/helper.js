@@ -1,0 +1,1 @@
+export const serverUrl = "https://pos-api.onrender/api"

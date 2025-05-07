@@ -1,0 +1,75 @@
+{
+  "name": "advanceshop",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "11.11.1",
+    "@mantine/carousel": "6.0.19",
+    "@mantine/core": "6.0.19",
+    "@mantine/dates": "6.0.19",
+    "@mantine/hooks": "6.0.19",
+    "@mantine/notifications": "6.0.19",
+    "@reduxjs/toolkit": "1.9.5",
+    "@tabler/icons-react": "2.30.0",
+    "@tanstack/react-query": "4.36.1",
+    "@tanstack/react-query-devtools": "4.36.1",
+    "@testing-library/jest-dom": "5.17.0",
+    "@testing-library/react": "13.4.0",
+    "@testing-library/user-event": "13.5.0",
+    "apexcharts": "3.41.1",
+    "axios": "1.4.0",
+    "buffer": "6.0.3",
+    "embla-carousel-autoplay": "7.1.0",
+    "embla-carousel-react": "7.0.0",
+    "firebase": "^11.6.1",
+    "formik": "2.4.2",
+    "js-cookie": "3.0.5",
+    "lodash": "4.17.21",
+    "mantine-react-table": "1.1.2",
+    "moment": "2.29.4",
+    "qrcode.react": "3.1.0",
+    "react": "^18.2.0",
+    "react-apexcharts": "1.4.1",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "14.2.3",
+    "react-google-button": "^0.8.0",
+    "react-image-file-resizer": "0.4.8",
+    "react-infinite-scroller": "1.2.6",
+    "react-lazy-load-image-component": "1.6.0",
+    "react-redux": "8.1.2",
+    "react-responsive": "9.0.2",
+    "react-router-dom": "6.14.2",
+    "react-slick": "0.29.0",
+    "react-to-print": "2.14.15",
+    "react-type-animation": "3.2.0",
+    "redux-thunk": "2.4.2",
+    "socket.io": "4.7.2",
+    "socket.io-client": "4.7.2",
+    "vite-plugin-babel": "^1.3.1",
+    "web-vitals": "2.1.4",
+    "yup": "1.2.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "@babel/plugin-transform-react-jsx": "^7.27.1",
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^5.0.0"
+  }
+}
