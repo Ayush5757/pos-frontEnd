@@ -59,15 +59,15 @@ export const useStyles = createStyles((theme) => ({
   },
   heading:{
     fontSize:'3rem',
-    color:'#ffad33',
-    backgroundColor:'rgba(50, 0, 0, 0.6)',
+    color:'black',
+    // backgroundColor:'black',
     padding:'10px',
     borderRadius:'10px',
     margin:'auto'
   },
   description:{
     fontSize:'1.4rem',
-    color:'#ffffff',
+    color:'black',
     fontWeight:700,
     letterSpacing:'2px !important',
     width:'80%',
@@ -78,6 +78,7 @@ export const useStyles = createStyles((theme) => ({
       width:'95%',
       fontSize:'1rem',
     },
+    paddingTop:'10%'
   },
   cardInfo:{
     display:'flex',
@@ -256,7 +257,7 @@ export const useStyles = createStyles((theme) => ({
   },
   modelSection:{
     '.mantine-Overlay-root':{
-      backgroundColor:'gray'
+      backgroundColor:'rgba(0,0,0,0.5)'
     }
   }
 }));

@@ -7,7 +7,13 @@
     justify-content: center;
     cursor: pointer;
   }
-  
+  * {
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE and Edge */
+}
+  *::-webkit-scrollbar {
+  display: none;                  /* Chrome, Safari, Opera */
+}
   .dropzone.active {
     border-color: #2196f3;
   }

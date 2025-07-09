@@ -10,6 +10,7 @@
     "@mantine/hooks": "6.0.19",
     "@mantine/notifications": "6.0.19",
     "@reduxjs/toolkit": "1.9.5",
+    "@splinetool/react-spline": "^4.0.0",
     "@tabler/icons-react": "2.30.0",
     "@tanstack/react-query": "4.36.1",
     "@tanstack/react-query-devtools": "4.36.1",

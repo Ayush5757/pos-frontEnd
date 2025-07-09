@@ -31,6 +31,7 @@ import KartLogo from "../../assets/KartLogo.jpg";
 import { useMediaQuery } from "react-responsive";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
+import Spline from "@splinetool/react-spline";
 
 const HomePage = () => {
   const { classes } = useStyles();
@@ -109,7 +110,7 @@ const HomePage = () => {
   return (
     <>
       <Box w={"100%"} className={classes.box} ref={Banner}>
-        <Grid gutter={0} className={classes.grid}>
+        <Grid gutter={0} className={classes.grid} style={{backgroundColor:'black'}}>
           <Grid.Col span={1} className={classes.logo_grid}>
             <LazyLoadImage
               alt="logo"
@@ -173,20 +174,21 @@ const HomePage = () => {
         <Box w={"100%"} className={classes.bannerImage_box}>
           <Box className={classes.BannerBox}>
             <Box w={"100%"} h={"80vh"}>
-              <LazyLoadImage
-                src={data?.data?.target[8]?.photoURL}
+              {/* <LazyLoadImage
+                src={data?.data?.target?.[8]?.photoURL}
                 height={"100%"}
                 width={"100%"}
                 style={{ objectFit: "cover" }}
                 alt="BannerImage"
                 effect="blur"
-              />
+              /> */}
+               <Spline scene="https://prod.spline.design/LsNpet3BojFvSs9z/scene.splinecode" />
             </Box>
             <Box className={classes.bannerTextBox}>
               <Box className={classes.dataBox}>
                 <TypeAnimation
                   sequence={[
-                    "Wellcome To HotelCafeKart.com 😍",
+                    "Wellcome To HotelCafeKart.com",
                     5000,
                     `Take Your Hotels & Cafe Online`,
                     5000,
@@ -197,7 +199,7 @@ const HomePage = () => {
                   style={{
                     fontSize: isMobile ? "1rem" : "3em",
                     display: "inline-block",
-                    color: "white",
+                    color: "black",
                     fontFamily: "museo-sans, sans-serif",
                   }}
                   repeat={Infinity}
@@ -212,7 +214,7 @@ const HomePage = () => {
             </Box>
           </Box>
         </Box>
-        <Box w={"100%"} mt={"90vh"}>
+        <Box w={"100%"} mt={"90vh"} style={{backgroundColor:'#faf6f9'}}>
           <Accordion chevronPosition="right" variant="contained">
             <Grid w={"100%"}>{items}</Grid>
           </Accordion>
@@ -222,7 +224,7 @@ const HomePage = () => {
           <Grid w={"100%"} gutter={0} p={10}>
             <Grid.Col span={12} md={6} p={10}>
               <Box w={"100%"} p={15} className={classes.cardInfo}>
-                <Grid w={"100%"} gutter={0}>
+                <Grid w={"100%"} gutter={2}>
                   <Grid.Col
                     span={12}
                     md={12}
@@ -230,14 +232,14 @@ const HomePage = () => {
                     className={classes.image_card}
                   >
                     <Box h={"30vh"}>
-                      <LazyLoadImage
-                        alt="MenuImage"
+                     <LazyLoadImage
+                        alt="billImage"
                         src={data?.data?.target[7]?.photoURL}
                         radius={"10px"}
                         height="100%"
                         width={"100%"}
                         boxShadow="2px 2px 8px #b3b3cc"
-                        style={{ objectFit: "cover" }}
+                        style={{ objectFit: "cover", padding:'10px',borderRadius: '20px' }}
                       />
                     </Box>
                   </Grid.Col>
@@ -278,7 +280,8 @@ const HomePage = () => {
                         height="100%"
                         width={"100%"}
                         boxShadow="2px 2px 8px #b3b3cc"
-                        style={{ objectFit: "cover" }}
+                        style={{ objectFit: "cover", padding:'10px',borderRadius: '20px' }}
+
                       />
                     </Box>
                   </Grid.Col>
@@ -302,7 +305,8 @@ const HomePage = () => {
             <Grid.Col span={12} mt={"5vh"}>
               <Divider color="#e1e1ea" />
             </Grid.Col>
-            <Grid w={"100%"} mt={"5vh"} gutter={0}>
+              <h2 style={{margin:'auto', marginTop:'40px'}}>Pos Inventory management system</h2>
+            <Grid w={"100%"} mt={"10px"} gutter={0}>
               <Grid.Col span={12} md={6} className={classes.BigCard}>
                 <Paper w={"90%"} className={classes.imageShadow}>
                   <LazyLoadImage
@@ -446,7 +450,7 @@ const HomePage = () => {
               </Grid.Col>
 
               <Grid.Col span={12} className={classes.planeinfo} mt={"5vh"}>
-                <PrimaryButton className={classes.btn}>
+                <PrimaryButton className={classes.btn} onClick={()=> contactus.current.scrollIntoView({ behavior: "smooth" })}>
                   {" "}
                   Let's Go Make Your Busines Grow{" "}
                 </PrimaryButton>
@@ -724,12 +728,12 @@ const HomePage = () => {
       <Box mt={"10vh"} w={"99%"} className={classes.footerBox}>
         <Grid w={"90%"}>
           <Grid.Col span={12}>
-            <TextN1>Most Easy To Use 😍 </TextN1>
+            <h2>Features that our user can use</h2>
           </Grid.Col>
-          <Grid.Col span={12}>
+          <Grid.Col span={12} style={{padding:'50px'}}>
             <Carousel
               slideSize={isMobile ? "100%" : "80%"}
-              slideGap={"md"}
+              slideGap={"sm"}
               loop
               align="start"
               slidesToScroll={1}
@@ -739,7 +743,7 @@ const HomePage = () => {
               onMouseLeave={autoplay.current.reset}
             >
               <Carousel.Slide>
-                <Box h={"100%"}>
+                <Box h={"100%"} style={{padding:'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets"
                     src={data?.data?.target[0]?.photoURL}
@@ -758,7 +762,7 @@ const HomePage = () => {
                 </Box>
               </Carousel.Slide>
               <Carousel.Slide>
-                <Box h={"100%"}>
+                   <Box h={"100%"} style={{padding:'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets2"
                     src={data?.data?.target[1]?.photoURL}
@@ -776,7 +780,7 @@ const HomePage = () => {
                 </Box>
               </Carousel.Slide>
               <Carousel.Slide>
-                <Box h={"100%"}>
+                    <Box h={"100%"} style={{padding:'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets3"
                     src={data?.data?.target[4]?.photoURL}
