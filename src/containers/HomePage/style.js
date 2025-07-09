@@ -21,7 +21,8 @@ export const useStyles = createStyles((theme) => ({
   gridNav:{
     // backgroundColor:'Red',
     display:'flex',
-    justifyContent:'flex-end'
+    justifyContent:'flex-end',
+    paddingRight:'50px'
   },
   text:{
     width:'100%',

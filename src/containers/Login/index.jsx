@@ -29,8 +29,8 @@ const Login = () => {
 
   return (
     <Box className={classes.wrapper}>
-      <Grid gutter={10} style={{ padding: "5px" }}>
-        <Grid.Col span={6}>
+      <Grid gutter={10} style={{ padding: "5px"}}>
+        <Grid.Col span={12} md={6}>
           <Paper className={classes.formWrap} radius={0} p={30}>
             <TitleText order={2} ta="center" mt="md" mb={50}>
               Welcome to Login
@@ -117,8 +117,8 @@ const Login = () => {
             <LoadingOverlay visible={loginMutation.isLoading} />
           </Paper>
         </Grid.Col>
-      <Grid.Col span={6} style={{position:'relative',width:'100%'}}>
-        <Spline style={{position: 'absolute', right:'0' , top:'0'}} scene="https://prod.spline.design/zr4doD-H1BihT5Y9/scene.splinecode" />
+      <Grid.Col span={12} md={6} style={{position:'relative',width:'100%'}}>
+        <Spline style={{position: 'absolute', right:'0' , top: 0}} scene="https://prod.spline.design/zr4doD-H1BihT5Y9/scene.splinecode" />
       </Grid.Col>
       </Grid>
     </Box>
