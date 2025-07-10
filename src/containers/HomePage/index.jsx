@@ -31,6 +31,14 @@ import KartLogo from "../../assets/KartLogo.jpg";
 import { useMediaQuery } from "react-responsive";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNavigate } from "react-router-dom";
+import f1 from "../../assets/F1.jpg";
+import f2 from "../../assets/f2.jpg";
+import f3 from "../../assets/f3.png";
+import f4 from "../../assets/f4.png";
+import f5 from "../../assets/f5.png";
+import f6 from "../../assets/f6.png";
+import f7 from "../../assets/f7.png";
+import f8 from "../../assets/f8.png";
 import Spline from "@splinetool/react-spline";
 
 const HomePage = () => {
@@ -234,7 +242,7 @@ const HomePage = () => {
                     <Box h={"30vh"}>
                      <LazyLoadImage
                         alt="billImage"
-                        src={data?.data?.target[7]?.photoURL}
+                        src={f1}
                         radius={"10px"}
                         height="100%"
                         width={"100%"}
@@ -275,7 +283,7 @@ const HomePage = () => {
                     <Box h={"30vh"}>
                       <LazyLoadImage
                         alt="billImage"
-                        src={data?.data?.target[9]?.photoURL}
+                        src={f2}
                         radius={"10px"}
                         height="100%"
                         width={"100%"}
@@ -311,7 +319,7 @@ const HomePage = () => {
                 <Paper w={"90%"} className={classes.imageShadow}>
                   <LazyLoadImage
                     alt="inventorieImage"
-                    src={data?.data?.target[2]?.photoURL}
+                    src={f3}
                     width={"100%"}
                     fit="contain"
                     radius={"10px 10px 10px 10px"}
@@ -407,7 +415,7 @@ const HomePage = () => {
                 <Box w={"90%"} className={classes.imageShadow}>
                   <LazyLoadImage
                     alt="TablePanelImage"
-                    src={data?.data?.target[6]?.photoURL}
+                    src={f4}
                     width={"100%"}
                     radius={"10px 10px 10px 10px"}
                     fit="contain"
@@ -464,7 +472,7 @@ const HomePage = () => {
                 <Box h={isMobile ? "100%" : "60vh"}>
                   <LazyLoadImage
                     alt="orderList"
-                    src={data?.data?.target[5]?.photoURL}
+                    src={f5}
                     height={"100%"}
                     width={"100%"}
                     radius={"10px 10px 10px 10px"}
@@ -746,7 +754,7 @@ const HomePage = () => {
                 <Box h={"100%"} style={{padding:'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets"
-                    src={data?.data?.target[0]?.photoURL}
+                    src={f6}
                     height={"100%"}
                     width={"100%"}
                     radius={"10px 10px 10px 10px"}
@@ -765,7 +773,7 @@ const HomePage = () => {
                    <Box h={"100%"} style={{padding:'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets2"
-                    src={data?.data?.target[1]?.photoURL}
+                    src={f7}
                     height={"100%"}
                     width={"100%"}
                     radius={"10px 10px 10px 10px"}
@@ -783,7 +791,7 @@ const HomePage = () => {
                     <Box h={"100%"} style={{padding:'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets3"
-                    src={data?.data?.target[4]?.photoURL}
+                    src={f8}
                     height={"100%"}
                     width={"100%"}
                     radius={"10px 10px 10px 10px"}
