@@ -15,7 +15,6 @@ import {
 import React, { useEffect, useState } from "react";
 import CardCarousel from "../../components/Card/CardCarousel";
 import { Carousel } from "@mantine/carousel";
-import { CardCustome } from "../../components/Card";
 import { TextN1 } from "../../components/Text";
 import { useStyles } from "./style";
 import {

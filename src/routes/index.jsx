@@ -55,8 +55,13 @@ const routes = createBrowserRouter([
   {
     path: "/",
     element: <AuthLayout />,
+    errorElement: (
+      <h2 style={{ textAlign: "center" }}>
+        Please go back to Previous Tab and try again
+      </h2>
+    ),
     children: [
-       {
+      {
         path: "/",
         element: <HomePage />,
       },
@@ -76,27 +81,33 @@ const routes = createBrowserRouter([
         path: "/loginwaiter",
         element: <WaiterLoginContainer />,
       },
-     
     ],
   },
 
   {
     path: "/",
     element: <AdminAuth />,
+    errorElement: (
+      <h2 style={{ textAlign: "center" }}>
+        Please go back to Previous Tab and try again
+      </h2>
+    ),
     children: [
-     
-       {
+      {
         path: "/my-admin-panel",
         element: <Admin />,
       },
-     
     ],
   },
-
 
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: (
+      <h2 style={{ textAlign: "center" }}>
+        Please go back to Previous Tab and try again
+      </h2>
+    ),
     children: [
       {
         path: "/dashboard",
@@ -127,53 +138,53 @@ const routes = createBrowserRouter([
         element: <FoodCategories />,
       },
       {
-        path: '/shop-monthly-expanse-list',
-        element: <ExpenseContainer />
+        path: "/shop-monthly-expanse-list",
+        element: <ExpenseContainer />,
       },
-      
+
       {
-        path: '/general-notify-generalpanel',
-        element: <GeneralNotificationContainer />
-      },
-      {
-        path: '/shop-notify-order-generate-to-confirm',
-        element: <ShopNotificationOrderPanel />
+        path: "/general-notify-generalpanel",
+        element: <GeneralNotificationContainer />,
       },
       {
-        path: '/user-profile-structure-beam',
-        element: <UserProfileStructure />
+        path: "/shop-notify-order-generate-to-confirm",
+        element: <ShopNotificationOrderPanel />,
       },
       {
-        path: '/user-profile-structure-images',
-        element: <ShopBanerImagesTaking />
+        path: "/user-profile-structure-beam",
+        element: <UserProfileStructure />,
       },
       {
-        path: '/fast-order-customer',
-        element: <FasteOrderContainer />
+        path: "/user-profile-structure-images",
+        element: <ShopBanerImagesTaking />,
       },
       {
-        path: '/kot-create-user',
-        element: <KotUser />
+        path: "/fast-order-customer",
+        element: <FasteOrderContainer />,
       },
       {
-        path: '/waiter-create-user',
-        element: <WaiterUserContainer />
+        path: "/kot-create-user",
+        element: <KotUser />,
       },
       {
-        path: '/shop-order-list',
-        element: <OrderList />
+        path: "/waiter-create-user",
+        element: <WaiterUserContainer />,
       },
       {
-        path: '/room-order-list',
-        element: <RoomOrderList />
+        path: "/shop-order-list",
+        element: <OrderList />,
       },
       {
-        path: '/user-room-settings',
-        element: <UserRoomSetting />
+        path: "/room-order-list",
+        element: <RoomOrderList />,
       },
       {
-        path: '/staff-panel',
-        element: <StaffPanel />
+        path: "/user-room-settings",
+        element: <UserRoomSetting />,
+      },
+      {
+        path: "/staff-panel",
+        element: <StaffPanel />,
       },
       {
         path: "/shop-rooms-inventory",
@@ -203,12 +214,16 @@ const routes = createBrowserRouter([
         path: "/reminders",
         element: <Reminders />,
       },
-
     ],
   },
   {
     path: "/",
     element: <KOTMainLayout />,
+    errorElement: (
+      <h2 style={{ textAlign: "center" }}>
+        Please go back to Previous Tab and try again
+      </h2>
+    ),
     children: [
       {
         path: "/kot-ticket-counter",
@@ -216,10 +231,15 @@ const routes = createBrowserRouter([
       },
     ],
   },
-  
+
   {
     path: "/",
     element: <WaiterMainLayout />,
+    errorElement: (
+      <h2 style={{ textAlign: "center" }}>
+        Please go back to Previous Tab and try again
+      </h2>
+    ),
     children: [
       {
         path: "/waiter-table-store",
@@ -229,13 +249,17 @@ const routes = createBrowserRouter([
         path: "/waiter-inventorie",
         element: <WaiterInventorie />,
       },
-     
     ],
   },
 
   {
     path: "/",
     element: <CustomerLayout />,
+    errorElement: (
+      <h2 style={{ textAlign: "center" }}>
+        Please go back to Previous Tab and try again
+      </h2>
+    ),
     children: [
       {
         path: "/shop-listing",
@@ -246,20 +270,20 @@ const routes = createBrowserRouter([
         element: <ShopProduct />,
       },
       {
-        path: '/shop-menu-card/:shop_id/:access?/:table_id?/:table_type_id?/:table_name?/:order_type?',
-        element: <MenuCard />
+        path: "/shop-menu-card/:shop_id/:access?/:table_id?/:table_type_id?/:table_name?/:order_type?",
+        element: <MenuCard />,
       },
       {
         path: "/shop-profile/:shop_id",
         element: <ShopMainPage />,
       },
       {
-        path: '/customer-notification-order-notify',
-        element: <NotificationContainer />
+        path: "/customer-notification-order-notify",
+        element: <NotificationContainer />,
       },
       {
-        path: '/customer-room-notification-order-notify',
-        element: <NotificationRoomContainer />
+        path: "/customer-room-notification-order-notify",
+        element: <NotificationRoomContainer />,
       },
       //  for go to shopmain to Roommenu
       {

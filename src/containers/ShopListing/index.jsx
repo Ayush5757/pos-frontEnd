@@ -34,7 +34,7 @@ const ShopListing = () => {
   const navigate = useNavigate();
   const { classes } = useStyles();
   const [currentPage, setCurrentPage] = useState(1);
-  const [shopList, setShopList] = useState();
+  const [shopList, setShopList] = useState(null);
   const [searchInput, setSearchInput] = useState(null);
   const [pinCodeInput, setPinCodeInput] = useState(null);
   const [cityNameInput, setCityNameInput] = useState(null);
@@ -51,6 +51,8 @@ const ShopListing = () => {
     enabled: false,
   });
 
+  console.log('shopList',shopList,isFetching);
+  
   useEffect(() => {
     refetch();
   }, [currentPage]);
@@ -160,10 +162,10 @@ const ShopListing = () => {
           <Grid mt={10}>
             {/*  Shop Boxes */}
             <>
-              {shopList?.map((val, index) => (
-                <>
-                  <Grid.Col span={12} xs={6} sm={6} md={6} lg={4}>
-                    {val?.banner_image[0]?.photoURL &&
+              {shopList?.map((val, i) => (
+                <div key={i}>
+                  <Grid.Col  span={12} xs={6} sm={6} md={6} lg={4}>
+                    {val?.banner_image?.[0]?.photoURL &&
                       val?.shopName &&
                       val?.address &&
                       val?.phone &&
@@ -171,9 +173,10 @@ const ShopListing = () => {
                         <Paper shadow="xl" radius={10}>
                           <Grid gutter={2} className={classes.ShopBox} p={10}>
                             <Grid.Col span={5} className={classes.image}>
-                              <Carousel controlSize={14} loop>
-                                {val?.banner_image?.map((val) => (
-                                  <Carousel.Slide>
+                              {Array.isArray(val?.banner_image) && val.banner_image.length > 0 && (
+                              <Carousel controlSize={14}  loop>
+                                {val?.banner_image?.map((val,ind) => (
+                                  <Carousel.Slide key={ind}>
                                     <LazyLoadImage
                                       className={classes.image_carousel}
                                       mx="auto"
@@ -189,6 +192,7 @@ const ShopListing = () => {
                                   </Carousel.Slide>
                                 ))}
                               </Carousel>
+                              )}
                             </Grid.Col>
                             <Grid.Col
                               span={7}
@@ -360,7 +364,7 @@ const ShopListing = () => {
                         </Paper>
                       )}
                   </Grid.Col>
-                </>
+                </div>
               ))}
             </>
           </Grid>
