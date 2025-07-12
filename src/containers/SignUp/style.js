@@ -4,10 +4,10 @@ export const useStyles = createStyles((theme) => ({
     height: "100vh",
     backgroundSize: "cover",
     // backgroundImage:"url(https://images.unsplash.com/photo-1484242857719-4b9144542727?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1280&q=80)",
-      '.mantine-ftmntk':{
-        paddingTop:'5%' 
-    }
+    ".mantine-ftmntk": {
+      paddingTop: "5%",
     },
+  },
 
   form: {
     borderRight: `${rem(1)} solid ${
@@ -21,5 +21,9 @@ export const useStyles = createStyles((theme) => ({
       maxWidth: "100%",
     },
   },
-
+  spline: {
+    "@media (max-width:1025px)": {
+      display: "none",
+    },
+  },
 }));

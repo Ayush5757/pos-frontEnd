@@ -23,7 +23,7 @@ const SignUp = () => {
   return (
     <Box className={classes.wrapper}>
       <Grid gutter={10} style={{ padding: "5px" }}>
-        <Grid.Col span={6}>
+        <Grid.Col span={12} lg={6}>
           <Paper className={classes.form} radius={0} p={30}>
             <TitleText
               order={2}
@@ -32,7 +32,7 @@ const SignUp = () => {
               mt="md"
               mb={50}
             >
-              Welcome to SignUp
+              Welcome to Signup
             </TitleText>
             <Formik
               initialValues={{ shopName: "", shopEmail: "", shopPassword: "" }}
@@ -103,9 +103,9 @@ const SignUp = () => {
             <LoadingOverlay visible={signUpMutation?.isLoading} />
           </Paper>
         </Grid.Col>
-        <Grid.Col span={6} style={{ position: "relative", width: "100%" }}>
+        <Grid.Col span={12} lg={6} style={{ position: "relative", width: "100%" }} className={classes.spline}>
           <Spline
-            style={{ position: "absolute", right: "0", top: "0" }}
+            style={{ position: "absolute", right: "0", top: "0"}}
             scene="https://prod.spline.design/zr4doD-H1BihT5Y9/scene.splinecode"
           />
         </Grid.Col>

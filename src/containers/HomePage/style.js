@@ -19,23 +19,30 @@ export const useStyles = createStyles((theme) => ({
     // backgroundColor:'green'
   },
   gridNav:{
+    width:'100%',
     // backgroundColor:'Red',
     display:'flex',
     justifyContent:'flex-end',
-    paddingRight:'50px'
+    padding: 0,
+    height:'100%',
   },
   text:{
-    width:'100%',
     '@media (max-width: 750px)': {
       fontSize:'12px',
     },
+    width:'100%',
+    height:'100%',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
     // backgroundColor:'yellow',
-    textAlign:'end',
     fontSize:'16px',
-    color:'#ffffff',
+    color:'white',
     cursor:'pointer',
+    transition:'all 0.3s ease',
     '&:hover':{
-      color:'yellow',
+      color:'#ffffffc8',
+      transform: 'translateY(-2px)'
     }
   },
   bannerImage_box:{
@@ -49,28 +56,42 @@ export const useStyles = createStyles((theme) => ({
   bannerTextBox:{
     position:'absolute',
     width:'100%',
-    top:'40%',
+    top:'30%',
     display:'flex',
-    justifyContent:'center'
+    justifyContent:'center',
+    '@media (max-width: 750px)':{
+      top: '20%'
+    }
   },
   dataBox:{
     display:'flex',
     flexDirection:'column',
-    alignItems:'center'
+    alignItems:'center',
+    '@media (min-width: 1025px)':{
+      // backgroundColor:'green'
+    }
   },
   heading:{
     fontSize:'3rem',
-    color:'black',
-    // backgroundColor:'black',
+    backgroundColor:'rgba(0, 0, 0, 0.9)',
+    '@media (max-width: 750px)':{
+      backgroundColor:'white',
+       color:'black',
+       fontWeight: 'bold',
+        background:'none !important',
+    },
+    transition: 'all 0.5s ease',
+    transform: 'translateY(-4px)',
     padding:'10px',
+    color:'white',
     borderRadius:'10px',
     margin:'auto'
   },
   description:{
     fontSize:'1.4rem',
-    color:'black',
-    fontWeight:700,
-    letterSpacing:'2px !important',
+    color:'rgba(0, 0, 0, 0.84)',
+    fontWeight:800,
+    letterSpacing:'-0.5px !important',
     width:'80%',
     padding:'10px 25px',
     borderRadius:'10px',
@@ -78,8 +99,10 @@ export const useStyles = createStyles((theme) => ({
     '@media (max-width: 750px)': {
       width:'95%',
       fontSize:'1rem',
+      display:'none'
     },
-    paddingTop:'10%'
+    paddingTop:'10%',
+    fontFamily: "Poppins, sans-serif !important"
   },
   cardInfo:{
     display:'flex',

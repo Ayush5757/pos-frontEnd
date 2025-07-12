@@ -118,7 +118,7 @@ const Login = () => {
           </Paper>
         </Grid.Col>
       <Grid.Col span={12} md={6} style={{position:'relative',width:'100%'}}>
-        <Spline style={{position: 'absolute', right:'0' , top: 0}} scene="https://prod.spline.design/zr4doD-H1BihT5Y9/scene.splinecode" />
+        <Spline style={{position: 'absolute', right:'0' , top: 0}} className={classes.spline} scene="https://prod.spline.design/zr4doD-H1BihT5Y9/scene.splinecode" />
       </Grid.Col>
       </Grid>
     </Box>

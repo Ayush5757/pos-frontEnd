@@ -13,7 +13,7 @@ export const TitleText = ({ children }) => {
 
 export const TextN1 = ({ children, link,to,onClick ,...rest}) => {
   return (
-    <Text {...rest} style={{fontFamily:"'Gabarito', sans-serif", letterSpacing:'0.3px' }} >
+    <Text {...rest} style={{fontFamily:"'Inter', sans-serif", letterSpacing:'0.3px' }} >
       {children}
       {(link && to) && (
         <Anchor

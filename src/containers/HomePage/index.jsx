@@ -51,7 +51,7 @@ const HomePage = () => {
   const [LoginBtn, setLoginBtn] = useState(false);
   const [phoneNumber, setphoneNumber] = useState('9589857573');
   const isMobile = useMediaQuery({
-    query: "(max-width: 1000px)",
+    query: "(max-width: 1025px)",
   });
   const charactersList = [
     {
@@ -181,33 +181,25 @@ const HomePage = () => {
         </Grid>
         <Box w={"100%"} className={classes.bannerImage_box}>
           <Box className={classes.BannerBox}>
-            <Box w={"100%"} h={"80vh"}>
-              {/* <LazyLoadImage
-                src={data?.data?.target?.[8]?.photoURL}
-                height={"100%"}
-                width={"100%"}
-                style={{ objectFit: "cover" }}
-                alt="BannerImage"
-                effect="blur"
-              /> */}
+            <Box w={"100%"} h={isMobile?'60vh':"80vh"}>
                <Spline scene="https://prod.spline.design/LsNpet3BojFvSs9z/scene.splinecode" />
             </Box>
             <Box className={classes.bannerTextBox}>
-              <Box className={classes.dataBox}>
+              <Box className={classes.dataBox}style={{ padding: isMobile ? "10px" : "10px" }}>
                 <TypeAnimation
                   sequence={[
-                    "Wellcome To HotelCafeKart.com",
+                    "Welcome to HotelCafeKart",
                     5000,
-                    `Take Your Hotels & Cafe Online`,
+                    `Go Digital with Your Café or Hotel – Effortlessly.`,
                     5000,
                   ]}
                   wrapper="span"
                   className={classes.heading}
                   speed={50}
                   style={{
-                    fontSize: isMobile ? "1rem" : "3em",
+                    fontSize: isMobile ? "2rem" : "3em",
+                    textAlign:'center',
                     display: "inline-block",
-                    color: "black",
                     fontFamily: "museo-sans, sans-serif",
                   }}
                   repeat={Infinity}
@@ -222,7 +214,7 @@ const HomePage = () => {
             </Box>
           </Box>
         </Box>
-        <Box w={"100%"} mt={"90vh"} style={{backgroundColor:'#faf6f9'}}>
+        <Box w={"100%"} mt={isMobile?'50vh':"90vh"} style={{backgroundColor:'#faf6f9'}}>
           <Accordion chevronPosition="right" variant="contained">
             <Grid w={"100%"}>{items}</Grid>
           </Accordion>
@@ -738,7 +730,7 @@ const HomePage = () => {
           <Grid.Col span={12}>
             <h2>Features that our user can use</h2>
           </Grid.Col>
-          <Grid.Col span={12} style={{padding:'50px'}}>
+          <Grid.Col span={12} style={{padding:'0'}}>
             <Carousel
               slideSize={isMobile ? "100%" : "80%"}
               slideGap={"sm"}
@@ -751,7 +743,7 @@ const HomePage = () => {
               onMouseLeave={autoplay.current.reset}
             >
               <Carousel.Slide>
-                <Box h={"100%"} style={{padding:'20px'}}>
+                <Box h={"100%"} style={{padding:isMobile?'10px':'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets"
                     src={f6}
@@ -762,15 +754,15 @@ const HomePage = () => {
                     style={{
                       border: "1px solid #e0e0eb",
                       borderRadius: "10px",
-                      padding: "10px",
                       boxShadow: "2px 2px 8px #b3b3cc",
                       objectFit: "cover",
+                      padding:'10px'
                     }}
                   />
                 </Box>
               </Carousel.Slide>
               <Carousel.Slide>
-                   <Box h={"100%"} style={{padding:'20px'}}>
+                    <Box h={"100%"} style={{padding:isMobile?'10px':'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets2"
                     src={f7}
@@ -780,15 +772,15 @@ const HomePage = () => {
                     style={{
                       border: "1px solid #e0e0eb",
                       borderRadius: "10px",
-                      padding: "10px",
                       boxShadow: "2px 2px 8px #b3b3cc",
                       objectFit: "cover",
+                      padding:'10px'
                     }}
                   />
                 </Box>
               </Carousel.Slide>
               <Carousel.Slide>
-                    <Box h={"100%"} style={{padding:'20px'}}>
+                 <Box h={"100%"} style={{padding:isMobile?'10px':'20px'}}>
                   <LazyLoadImage
                     alt="kotTickets3"
                     src={f8}
@@ -798,9 +790,9 @@ const HomePage = () => {
                     style={{
                       border: "1px solid #e0e0eb",
                       borderRadius: "10px",
-                      padding: "10px",
                       boxShadow: "2px 2px 8px #b3b3cc",
                       objectFit: "cover",
+                      padding:'10px'
                     }}
                   />
                 </Box>

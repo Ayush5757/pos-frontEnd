@@ -21,5 +21,10 @@ export const useStyles = createStyles((theme) => ({
       maxWidth: "100%",
     },
   },
+  spline:{
+    '@media (max-width: 1025px)':{
+      display:'none'
+    }
+  }
 
 }));
