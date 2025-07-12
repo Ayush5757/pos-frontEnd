@@ -160,6 +160,7 @@ export const useStyles = createStyles((theme) => ({
   TickInfoGrid:{
     display:'flex',
     justifyContent:'center',
+    // backgroundColor:"red"
   },
   boxTickinfo:{
     backgroundColor:'#e6f3ff',

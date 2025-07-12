@@ -497,7 +497,7 @@ const HomePage = () => {
                 mt={"20px"}
               >
                 <Grid w={"90%"} className={classes.boxTickinfo}>
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -510,7 +510,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -523,7 +523,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -536,7 +536,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -549,7 +549,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -562,7 +562,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -575,7 +575,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -588,7 +588,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -604,7 +604,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -617,7 +617,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -633,7 +633,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -646,7 +646,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -663,7 +663,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -679,7 +679,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -692,7 +692,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
@@ -705,7 +705,7 @@ const HomePage = () => {
                     </Box>
                   </Grid.Col>
 
-                  <Grid.Col span={12} md={3}>
+                  <Grid.Col span={12} md={3} style={{display:'flex',justifyContent:'center'}}>
                     <Box className={classes.TickInfoBox}>
                       <ActionIcon
                         variant="transparent"
