@@ -188,16 +188,16 @@ const HomePage = () => {
               <Box className={classes.dataBox}style={{ padding: isMobile ? "10px" : "10px" }}>
                 <TypeAnimation
                   sequence={[
-                    "Welcome to HotelCafeKart",
+                    "Welcome to HotelCafeKart Enjoy Your Time",
                     5000,
-                    `Go Digital with Your Café or Hotel – Effortlessly.`,
+                    `Go Digital with Your Café or Hotel Effortlessly`,
                     5000,
                   ]}
                   wrapper="span"
                   className={classes.heading}
                   speed={50}
                   style={{
-                    fontSize: isMobile ? "2rem" : "3em",
+                    fontSize: isMobile ? "1.5rem" : "3em",
                     textAlign:'center',
                     display: "inline-block",
                     fontFamily: "museo-sans, sans-serif",
